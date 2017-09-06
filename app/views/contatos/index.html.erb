@@ -32,10 +32,10 @@
           <% @contatos.each do |contato| %>
            <div class="row">
             <tr>
-             <div class="col-xs-6 col-md-4"> <td><%= contato.nome %></td></div>
-             <div class="col-xs-6 col-md-4"> <td><%= contato.endereco %></td></div>
-             <div class="col-xs-6 col-md-4"> <td><%= contato.email %></td></div>
-             <div class="col-xs-6 col-md-4"> <td><%= contato.dataNascimento %></td></div>
+             <div class="col-xs-6 col-md-4"> <td> <h6> <%= contato.nome %> </h6></td></div>
+             <div class="col-xs-6 col-md-4"> <td> <h6><%= contato.endereco %> </h6></td></div>
+             <div class="col-xs-6 col-md-4"> <td> <h6><%= contato.email %>  </h6></td></div>
+             <div class="col-xs-6 col-md-4"> <td> <h6><%= contato.dataNascimento %> </h6></td></div>
              <div class="col-xs-6 col-md-4"> <td><%= link_to 'Visualizar', contato, class: "btn btn-link" %></td></div>
              <div class="col-xs-6 col-md-4"> <td><%= link_to 'Editar', edit_contato_path(contato), class: "btn btn-link" %></td></div>
              <div class="col-xs-6 col-md-4"> <td><%= link_to 'Deletar', contato, class: "btn btn-link", method: :delete, data: { confirm: 'Tem certezar que você quer deletar?' } %></td></div>
@@ -48,11 +48,40 @@
        </table>
        </div>
       </div>
-    </div>
 
-      <br>
+   <br>
     <div class="text-center">
       <%= link_to 'Adicionar Contato', new_contato_path, class: 'btn btn-success center-block' %>
     </div>
+
+      <div class="container-fluid">
+        <div class="centralizar">
+          <div class="row">
+            Redes Sociais
+          </div>
+        </div>
+      
+      <div class="row">
+        <div class="col-md-2">
+          <%= image_tag('envelope.png', class: 'img-responsive')%>
+        </div>
+        <div class="col-md-2">
+          <%= image_tag('facebook.png', class: 'img-responsive')%>
+        </div>
+        <div class="col-md-2">
+          <%= image_tag('twitter.png', class: 'img-responsive')%>
+        </div>
+        <div class="col-md-2">
+          <%= image_tag('whatsapp-logo.png', class: 'img-responsive')%>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+     
+
+  
+
   </body>
 </html>

@@ -71,4 +71,5 @@ class ContatosController < ApplicationController
     def contato_params
       params.require(:contato).permit(:nome, :endereco, :email, :dataNascimento)
     end
+
 end

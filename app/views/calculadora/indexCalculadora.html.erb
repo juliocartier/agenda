@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+<%= form_tag :action => 'indexCalculadora' do %>
+
+    <label> numero 1</label>
+    <%= number_field_tag(:valor) %>
+
+    <label> numero 2</label>
+    <%= number_field_tag(:valor2) %>
+    <br/>
+
+    <input value="calcular" type="submit" />
+
+    <br/>
+
+    <label>soma</label>
+    <%= @num3 %>
+
+  <% end %>
+
+
+  </body>
+</html>

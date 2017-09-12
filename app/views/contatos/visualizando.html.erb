@@ -1,0 +1,29 @@
+<div id="main-container" class="container-fluid">
+    <div class="row">
+     <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <div class="row">
+           <tr>
+
+         <div class="col-xs-6 col-md-4"><th>Nome</th></div>
+          </div>
+
+           </tr>
+          </div>
+        </thead>
+
+        <tbody>
+          <% @contatos.each do |contato| %>
+           <div class="row">
+            <tr>
+             <div class="col-xs-6 col-md-4"> <td> <h6> <%= contato.nome %> </h6></td></div>
+              </tr>
+            </div>
+
+          <% end %>
+        </tbody>
+       </table>
+       </div>
+      </div>
+    </div>

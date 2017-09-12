@@ -7,6 +7,10 @@ class ContatosController < ApplicationController
     @contatos = Contato.all
   end
 
+  def visualizando
+    @contatos = Contato.order(:nome).last
+  end
+
   # GET /contatos/1
   # GET /contatos/1.json
   def show

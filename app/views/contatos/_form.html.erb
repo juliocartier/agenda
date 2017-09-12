@@ -14,30 +14,30 @@
           </div>
         <% end %>
 
-
-      <div class="form-group">
+    <form class="form-inline">
+      <div class="form-group row">
         <label class="col-md-4 control-label" for="formGroupInputLarge">Nome</label>
         <div class="col-xs-8">
             <%= form.text_field :nome, id: :contato_nome, class: 'form-control' %>
         </div>
       </div>
       
-      <div class="form-group">
+      <div class="form-group row">
         <label class="col-md-4 control-label" for="formGroupInputLarge">Endereço</label>
           <div class="col-xs-8">
             <%= form.text_field :endereco, id: :contato_endereco, class: 'form-control' %>
           </div>
         </div>
 
-      <div class="form-group">
+      <div class="form-group row">
         <label class="col-md-6 control-label" for="formGroupInputLarge">E-Mail</label>
           <div class="col-xs-8">
             <%= form.text_field :email, id: :contato_email, class: 'form-control' %>
           </div>
       </div>
 
-      <div class="form-group">
-          <label class="col-md-12 control-label" for="formGroupInputLarge">Data Nascimento</label>
+      <div class="form-group row">
+          <label class="col-md-6 control-label" for="formGroupInputLarge">Data Nascimento</label>
           <div class="col-xs-8">
           <%= form.date_select :dataNascimento, id: :contato_dataNascimento, start_year: 1950, order: [:day, :month, :year], :use_month_names=>["Janeiro" ,"Fevereiro", "Março", "Abril" ,"Maio", "Junho","Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],  class: 'selectpicker'%>
          </div>
@@ -51,5 +51,8 @@
           <%= link_to 'Voltar', contatos_path, class: "btn btn-link" %>
         </div>
       </div>
+
+    </form>
+
   <% end %>
  

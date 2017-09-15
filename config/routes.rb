@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contatosses
   resources :telefones
   resources :contatos
   resources :rooms

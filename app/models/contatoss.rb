@@ -1,0 +1,2 @@
+class Contatoss < ApplicationRecord
+end

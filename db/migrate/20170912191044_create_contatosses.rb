@@ -1,6 +1,6 @@
-	class CreateContatos < ActiveRecord::Migration[5.1]
+class CreateContatosses < ActiveRecord::Migration[5.1]
   def change
-    create_table :contatos do |t|
+    create_table :contatosses do |t|
       t.string :nome
       t.string :endereco
       t.string :email

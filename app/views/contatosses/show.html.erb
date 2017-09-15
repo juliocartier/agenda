@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @contatoss.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @contatoss.endereco %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @contatoss.email %>
+</p>
+
+<p>
+  <strong>Datanascimento:</strong>
+  <%= @contatoss.dataNascimento %>
+</p>
+
+<%= link_to 'Edit', edit_contatoss_path(@contatoss) %> |
+<%= link_to 'Back', contatosses_path %>
